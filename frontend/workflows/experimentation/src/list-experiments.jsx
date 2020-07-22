@@ -9,7 +9,9 @@ const ListExperiments = () => {
       setExperiments(response?.data?.experiments || []);
     });
 
-    return <Table headings={["Downstream Cluster", "Upstream Cluster"]} />;
+    return (
+      <Table headings={["Downstream Cluster", "Upstream Cluster", "Percentage", "HTTP Status"]} />
+    );
   }
 
   return (
